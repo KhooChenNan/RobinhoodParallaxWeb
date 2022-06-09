@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#2b1005,#7597de);
+    overflow-x: hidden;
+}
+header .logo
+{
+    position: absolute;
+    top: 540px;
+    font-size: 135px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1000;
+}
+header ul
+{
+    position: absolute;
+    top: 40px;
+    left: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+header ul li a.active
+{
+    text-decoration: underline;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#wizard
+{
+    position: absolute;
+    left: 700px;
+    height: 1000px;
+    width: 1000px;
+    z-index: 100;
+}
+section img#houses
+{
+    height: 600px;
+    width: 1800px;
+    top: 25px;
+    z-index: 11;
+}
+section img#houses3
+{
+    object-fit: cover;
+    z-index: -1;
+}
+section img#pavement
+{
+    object-fit: contain;
+    top: 185px;
+    z-index: 20;
+}
+section img#road
+{
+    height: 200px;
+    width: 1800px;
+    top: 565px;
+    z-index: 20;
+}
+section img#moon
+{
+    height: 250px;
+    width: 250px;
+    mix-blend-mode: screen;
+    z-index: -3;
+}
+section img#stars
+{
+    object-fit: cover;
+    z-index: -2;
+}
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5.5vw;
+    z-index: 1000;
+    transform: translateY(20px);
+    transform: translateX(10px);
+}
+#btn
+{
+    position: absolute;
+    text-decoration: none;
+    padding: 16px 50px;
+    border-radius: 100px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 1000;
+    transform: translateY(100px);
+    top: 220px;
+    mix-blend-mode: screen;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1.2em;
+    color: #fff;
+}
+.cursor {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    background-color: white;
+    z-index: 10000;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    transition: all 300ms ease-out;
+  }

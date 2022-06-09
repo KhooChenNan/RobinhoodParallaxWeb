@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Robinhood | Fight for glory</title>
+        <link rel = "stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo" id="logo">Robinhood</a>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="wizard.png" id="wizard">
+            <img src="houses.png" id="houses">
+            <img src="houses3.png" id="houses3">
+            <img src="pavement.png" id="pavement">
+            <img src="road.png" id="road">
+            <img src="moon.png" id="moon">
+            <img src="stars.png" id="stars">
+            <a href="#" id="btn">Play now</a>
+        </section>
+        <div class="sec">
+            <h2>Become the ultimate outlaw</h2>
+            <p class="text"><span style="font-size: 50px">L</span>orem ipsum dolor sit, amet consectetur adipisicing elit. Nobis totam enim ab provident esse quos? Ratione veniam iste quam ipsum. Unde delectus quis provident dicta recusandae assumenda iste saepe dolorum!<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quisquam ullam magni accusantium reprehenderit neque omnis optio quidem, assumenda reiciendis veritatis? Tenetur incidunt repellat reprehenderit officiis libero sed laudantium unde.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, iusto sit optio, quam doloremque nihil commodi tenetur soluta quia error eaque. Ipsa natus nihil fugit molestiae quidem in asperiores cum?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, odio amet! In a molestias pariatur qui? Esse, libero sit non nemo eum voluptates consequatur praesentium! Dolores eius repudiandae provident similique!</p>
+        </div>
+        <div class="sec">
+            <h2>Loot chests and Gear Up</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dicta iure nulla ratione tenetur repudiandae aspernatur porro minus reprehenderit praesentium laborum non fugit quo sunt similique velit ex, enim provident?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam porro dolorem explicabo officiis molestias numquam voluptatem optio. Amet aliquam iure quibusdam voluptatum. In eius delectus alias quos, magni perferendis. Non.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugit beatae eum consectetur cumque neque laboriosam deserunt eveniet obcaecati voluptatem ratione provident non, quisquam optio inventore explicabo similique exercitationem dolorum?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aut et quis odio velit nam deserunt voluptatibus inventore, laborum natus necessitatibus obcaecati ratione enim expedita. Atque nobis corrupti sunt voluptatem?</p>
+        </div>
+        <div class="sec">
+            <h2>Battle your rivals</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum nam voluptate hic cumque, sint vero obcaecati expedita odit cupiditate, sit ipsam recusandae culpa soluta? Soluta dignissimos ipsa ea reiciendis!<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam consectetur blanditiis impedit laborum odit, eum velit, alias tenetur architecto doloremque, quo excepturi quae dolorem ipsam fugit asperiores in voluptatibus aspernatur.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores reiciendis fugit corporis eos ab. Ratione ea, quas in non voluptatum aliquam eligendi perferendis, alias tempore, veritatis omnis porro modi!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam consequatur laborum eligendi! Doloremque cupiditate adipisci veritatis numquam eligendi quos sed, odio reiciendis eos? Maxime, itaque. Facilis, nesciunt pariatur. Dolore?</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.left = value * 0.1 + 'px';
+            })
+
+            var cursor = document.getElementById("cursor");
+            
+            document.body.addEventListener("mousemove", function(e) {
+            cursor.style.left = e.clientX + "px",
+                cursor.style.top = e.clientY + "px";
+            });
+        </script>
+
+    </body>
+
+</html>
